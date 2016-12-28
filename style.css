@@ -2,3 +2,11 @@ h1{
     color: blue;
     text-align: center;
 }
+
+.bg-holder{
+    width: 20%;
+}
+
+.bg-container{
+    display: flex;
+}
