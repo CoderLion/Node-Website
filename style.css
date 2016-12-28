@@ -5,7 +5,13 @@ h1{
 
 .bg-holder{
     width: 20%;
-    height: 20%;
+    height: 700px;
+    overflow: hidden;
+    
+}
+
+.bg-holder img{
+    object-fit: fill;
 }
 
 .bg-container{
