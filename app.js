@@ -8,9 +8,9 @@ router.use(function (req,res,next) {
   next();
 });
 
-//app.use("/", router);
+app.use("/", router);
 app.use('/', express.static(__dirname));
-//app.use('/pics', express.static(__dirname + "/pics"));
+app.use('/pics', express.static(__dirname + "/pics"));
 
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname + "/index.html"));
