@@ -6,6 +6,9 @@ h1{
 .bg-holder{
     width: 20%;
     height: 700px;
+    border-width: 2px 1px;
+    border-style: solid;
+    border-color: black;
     animation-name: shorten;
     animation-duration: 300ms;
     overflow: hidden;
@@ -13,21 +16,22 @@ h1{
 
 @keyframes widen{
     from {width: 20%;}
-    to {width: 50%;}
+    to {width: 100%;}
 }
 @keyframes shorten{
-    from {width: 50%;}
+    from {width: 100%;}
     to {width: 20%;}
 }
 
 .bg-holder:hover{
-    width: 50%;
+    width: 100%;
     animation-name: widen;
     animation-duration: 300ms;
 }
 
 .bg-holder img{
-    object-fit: fill;
+    height: 100%;
+    object-fit: contain;
 }
 
 .bg-container{
